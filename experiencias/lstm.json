@@ -1,0 +1,24 @@
+{
+    "estados": {
+        "memoria_corto_plazo": 0.906631410121917725,
+        "memoria_largo_plazo": 3.45806407928466797
+    },
+    "pesos": {
+        "peso_candidato": 0.86812436580657959,
+        "peso_entrada": 0.840758740901947021,
+        "peso_olvido": -0.322944015264511108,
+        "peso_salida": 4.59280824661254883
+    },
+    "ponderados": {
+        "ponderados_candidato": 1.86092007160186768,
+        "ponderados_entrada": 0.848297059535980225,
+        "ponderados_olvido": -0.465413928031921387,
+        "ponderados_salida": 0.436353594064712524
+    },
+    "sesgos": {
+        "sesgo_celda": 1.10554790496826172,
+        "sesgo_entrada": 1.53025925159454346,
+        "sesgo_olvido": 1.62708878517150879,
+        "sesgo_salida": -2.23267412185668945
+    }
+}
