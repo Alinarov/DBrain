@@ -184,3 +184,10 @@ Neuron[][] createNeuralNetwork(int inputNeurons, int[] hiddenLayers, int outputN
 
     return layers;
 }
+
+float xavierInit(float tamaño_entrenamiento, float tamaño_prueba) {
+    float bound = sqrt(6.0f / (tamaño_entrenamiento + tamaño_prueba));  // Ajusta inputSize/hiddenSize
+    return uniform(-bound, bound);
+}
+
+

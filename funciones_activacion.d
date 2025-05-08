@@ -20,6 +20,30 @@ float learningRate = 0.09;
 float discountFactor = 0.95;
 
 
+/* -------------- LSTM ---------------- */
+
+float sigmoid_estable(float x) {
+    x = max(-50.0f, min(50.0f, x)); // Evita overflow
+    return 1.0f / (1.0f + exp(-x));
+}
+
+float tanh_estable(float x) {
+    x = max(-50.0f, min(50.0f, x)); // Evita overflow
+    return (exp(x) - exp(-x)) / (exp(x) + exp(-x));
+}
+
+float tanh_derivada_estable(float x) {
+    float t = tanh_estable(x);
+    return 1 - t * t;
+}
+
+
+/* --------------------------------------- */
+
+
+
+
+
 // funcion de activacion: tanh
 float tanh_hiperbolica(float x) {
     float e_pos = exp(x);
